@@ -26,8 +26,6 @@
 - 🎉 **Confetti Animation**
   - Celebratory visuals on each win
 
----
-
 ## 🛠️ Technologies Used
 
 - **HTML5**
@@ -38,8 +36,12 @@
   - LocalStorage for data persistence
 - **Canvas Confetti (via CDN)**
 
----
+## Screenshots
+>
+![Screenshot 2025-06-24 161531](https://github.com/user-attachments/assets/0c9663c4-f945-41bb-a350-1a0442748def)
 
+![Screenshot 2025-06-24 161634](https://github.com/user-attachments/assets/0eef8f96-f8a6-40ce-9a6e-db354bf7e835)
 
+![Screenshot 2025-06-24 161720](https://github.com/user-attachments/assets/4185ac31-8213-427e-b017-31dd5324a66e)
 
-
+![Screenshot 2025-06-24 161742](https://github.com/user-attachments/assets/9abddcbc-0989-47a0-9140-0275e0909cc7)
