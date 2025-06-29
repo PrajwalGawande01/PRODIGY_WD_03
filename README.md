@@ -2,7 +2,7 @@
 
 # 🎮 Task 3 - Tic-Tac-Toe Web Application
 
-**Tic-Tac-Toe Pro** is a modern, interactive version of the classic game built with pure **HTML**, **CSS**, and **JavaScript**. It supports multiple difficulty levels of AI, two-player mode, a real-time timer, leaderboard tracking, dark mode, and celebratory confetti effects.
+**Tic-Tac-Toe** is a modern, interactive version of the classic game built with pure **HTML**, **CSS**, and **JavaScript**. It supports multiple difficulty levels of AI, two-player mode, a real-time timer, leaderboard tracking, dark mode, and celebratory confetti effects.
 
 ## 🌟 Features
 
