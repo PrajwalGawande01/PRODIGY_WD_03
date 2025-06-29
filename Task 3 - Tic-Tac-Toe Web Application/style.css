@@ -1,0 +1,154 @@
+:root {
+  --bg-light: #fffaf3;
+  --bg-dark: #1c1c1c;
+  --x-light: #ff3b3b;
+  --o-light: #3498db;
+  --x-dark: #ff7675;
+  --o-dark: #74b9ff;
+  --btn-light: #ffffff;
+  --btn-dark: #292929;
+  --btn-hover-light: #f2f2f2;
+  --btn-hover-dark: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-light);
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: var(--bg-dark);
+  color: #eee;
+}
+
+.container {
+  max-width: 500px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 0.5rem 0;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  aspect-ratio: 1;
+  gap: 8px;
+  margin: 1rem 0;
+}
+
+.cell {
+  background: rgba(0, 0, 0, 0.05);
+  aspect-ratio: 1 / 1;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background 0.2s;
+}
+
+body.dark .cell {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.cell.win {
+  animation: glow 0.8s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px lime;
+  }
+  to {
+    box-shadow: 0 0 20px gold;
+  }
+}
+
+.x::before {
+  content: "❌";
+  color: var(--x-light);
+}
+
+.o::before {
+  content: "⭕";
+  color: var(--o-light);
+}
+
+body.dark .x::before {
+  color: var(--x-dark);
+}
+
+body.dark .o::before {
+  color: var(--o-dark);
+}
+
+button, select {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  margin: 0.5rem;
+  cursor: pointer;
+  background-color: var(--btn-light);
+  transition: background-color 0.3s;
+}
+
+button:hover,
+select:hover {
+  background-color: var(--btn-hover-light);
+}
+
+body.dark button,
+body.dark select {
+  background-color: var(--btn-dark);
+  color: #eee;
+}
+
+body.dark button:hover,
+body.dark select:hover {
+  background-color: var(--btn-hover-dark);
+}
+
+.scoreboard,
+.controls,
+.mode-select,
+.leaderboard {
+  margin: 1rem 0;
+}
+
+.leaderboard p {
+  margin: 4px 0;
+}
+
+#timer {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+  .cell {
+    font-size: 2rem;
+  }
+}

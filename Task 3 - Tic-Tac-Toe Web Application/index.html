@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic-Tac-Toe Pro</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="top-controls">
+      <button onclick="toggleTheme()">🌙 Theme</button>
+      <h1>Tic-Tac-Toe</h1>
+      <!-- 🔇 Removed Sound Toggle Button -->
+    </div>
+
+    <div class="mode-select">
+      <label for="mode">Mode:</label>
+      <select id="mode" onchange="resetGame()">
+        <option value="ai-easy">AI - Easy</option>
+        <option value="ai-medium">AI - Medium</option>
+        <option value="ai-hard" selected>AI - Hard</option>
+        <option value="2p">Two Player</option>
+      </select>
+    </div>
+
+    <div class="scoreboard">
+      <span id="scoreX">X: 0</span> | <span id="scoreO">O: 0</span>
+    </div>
+
+    <div class="grid" id="grid"></div>
+    <p id="timer">⏱️ Time: 0s</p>
+
+    <div class="controls">
+      <button onclick="resetGame()">🔄 New Game</button>
+      <button onclick="resetLeaderboard()">🧹 Reset Leaderboard</button>
+    </div>
+
+    <p id="status"></p>
+
+    <div class="leaderboard">
+      <h3>🏆 Leaderboard</h3>
+      <p id="leaderX">Player X Wins: 0</p>
+      <p id="leaderO">Player O Wins: 0</p>
+      <p id="draws">Draws: 0</p>
+    </div>
+  </div>
+</body>
+</html>
